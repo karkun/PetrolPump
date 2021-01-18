@@ -298,11 +298,12 @@ li{
     color: black;
     outline: none;
     background: linear-gradient(to left, #93EDC7, #1CD8D2);
-    transition: color 0.2s ease-in;
+    transition: color 0.1s ease-in;
 }
 
 .submit:hover{
-    color: rgb(3, 0, 160);
+    background: linear-gradient(to left, #23d372, #1bd1aa);
+    color: rgb(255, 255, 255);
 }
 .footer{
     bottom: 0px;
