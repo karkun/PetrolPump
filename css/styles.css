@@ -363,13 +363,13 @@ li{
 }
 
 .menuhead{
-    font-size: .9em;
+    font-size: 1em;
     color: white;
     /* font-size: 16px; */
     font-weight: 600;
 }
 .menu{
-    font-size: .8em;
+    font-size: .9em;
     
     background-color: #0a5b6dbf;
 }
