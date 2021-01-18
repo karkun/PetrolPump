@@ -28,7 +28,7 @@ background: linear-gradient(to right, #93EDC7, #1CD8D2); /* W3C, IE 10+/ Edge, F
 
 .header{
     width: 100%;
-    min-height: 80px;
+    min-height: 60px;
     height: auto;
     display: flex;
     top: 0;
@@ -51,7 +51,7 @@ background: linear-gradient(to right, #93EDC7, #1CD8D2); /* W3C, IE 10+/ Edge, F
 h1{
     font-family: 'Fira Sans Condensed', sans-serif;
     font-weight: 400;
-    font-size: 2.2em;
+    font-size: 2em;
 }
 nav{
     width: 100%;
@@ -80,10 +80,10 @@ li{
     
 }
 .nav-link{
-    
     font-size: 1.2em;
     text-decoration: none;
     color: black;
+    font-family: 'Cairo';
     transition: color 0.2s ease-in;
 }
 
@@ -110,18 +110,30 @@ li{
     
 }
 .desc section{
-    font-size: 2em;
-    margin-bottom: 30px;
+    font-size: 1.6em;
+    margin-bottom: 25px;
 }
 
 .desc div{
     border: 2px solid black;
     background-color: #2df3b1;
     width: fit-content;
-    padding: 5px;
+    padding: 4px 6px;
     border-radius: 6px;
     cursor: pointer;
+    transition: background-color 0.2s ease-in;
 }
+
+.call{
+    color: black;
+    text-decoration: none;
+}
+
+.desc div:hover { 
+    background-color: rgb(13, 223, 118);
+}
+
+
 .img{
     width: 50%;
     margin: auto;
