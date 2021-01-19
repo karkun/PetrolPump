@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/all.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400&display=swap" rel="stylesheet">
+    <title>Petrol Pump ERP</title> 
+</head>
+<body>
+   <div class="dashhead">
+       <div class ="head">
+            <div class = "hd"><img src="./images/dashlogo.png"><h1>Dashboard</h1></div>
+            <div class = "us"><img src=""><span class="user"></span></div>
+        </div>
+    </div>
+    <div class="dash">
+        <div class="fc">
+            <div class="menuhead">Administration</div>
+            <div class="menu"><a href="emp_reg.html">Add Employee</a></div>
+            <div class="menu"><a href="sup_reg.html">Add Supplier</a></div>
+            <div class="menu"><a href="machine_reg.html">Add Machine</a></div>
+            <div class="menu"><a href="tank_reg.html">Add Tanker</a></div>
+            <div class="menu"><a href="sale_reg.html">Add Sales</a></div>
+            <div class="menuhead">Reports</div>
+            <div class="menu"><a href="">Employee Reports</a></div>
+            <div class="menu"><a href="">Supplier Report</a></div>
+            <div class="menu"><a href="">Machine Report</a></div>
+            <div class="menu"><a href="">Tanker Report</a></div>
+            <div class="menu"><a href="">Sales Report</a></div>
+            <div class="menuhead">Settings</div>
+            <div class="menu"><a href="">My Account</a></div>
+            <div class="menu"><a href="">Change Password</a></div>
+        </div>
+        <div class="sc">
+            <div class="reg_cont">
+                <h2>Add Tanker</h2>
+                <form class="reg" action="" method="POST"> 
+                    <div class="reg_sec">
+                        <div class="reg_input">
+                            <label for="sup_list" >Select Supplier</label>
+                            <select name="sup_list" autocomplete="off" required>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="reg_sec">
+                        <div class="reg_input">
+                            <label for="tank_no" >Tanker Number</label>
+                            <input type="text" name="tank_no" placeholder="Tanker Number" autocomplete="off" required>
+                        </div>
+                    </div>
+                    <div class="reg_sec">    
+                        <div class="reg_input">
+                            <label for="tank_date" >Tanker Date</label>
+                            <input type="date" name="tank_date" autocomplete="off" required>
+                        </div>
+                    </div>
+                    <div class="reg_sec">
+                        <div class="reg_input">
+                            <label for="tank_qty" >Tanker Quantity</label>
+                            <input type="text" name="tank_qty" placeholder="Tanker Quantity" autocomplete="off" required>
+                        </div>
+                    </div>
+                    <div class="reg_sec">
+                        <div class="reg_input">
+                            <label for="fuel_type" >Fuel Type</label>
+                            <select name="fuel_type" autocomplete="off" required>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="reg_sec">
+                        <div class="reg_input">
+                            <label for="t_desc" >Tanker Description</label>
+                            <textarea name="t_desc" placeholder="Tanker Description" rows="5" autocomplete="off" required></textarea>
+                        </div>
+                    </div>
+                                   
+                    
+                    <div class="btn">
+                        <button class="reg_rst" value="reset" formaction=""><i class="fas fa-redo"></i>
+                            
+                        </button>
+                        <button class="reg_sub" value="submit" formaction=""><i class="fas fa-chevron-right"></i>
+                               
+                        </button>
+                        
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+       
+</body>
+</html>

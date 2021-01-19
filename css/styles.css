@@ -416,7 +416,7 @@ form.reg{
     /* width: 100%; */
 }
 .reg_sec, .reg_add div, .reg_cont h3 {
-    margin-bottom: 5px;
+    margin-bottom: 6px;
 }
 .reg_cont h3{
     font-size: 1em;
@@ -488,4 +488,28 @@ button.reg_rst {
 button.reg_sub {
     background-color: rgba(17, 204, 17, 0.603);
     right: 0;
+}
+
+.reg_input textarea{
+    outline: none;
+    resize: none;
+    padding: 5px;
+    margin-top: 5px;
+    width: 80%;
+    overflow: auto;
+    border: 1px solid #dedddd;
+}
+
+.reg_input input[type="file"]{
+    margin-top: 5px;
+    padding-left: 5px;
+}
+
+.reg_input input[type="date"]{
+    outline: none;
+    width: 80%;
+    border: 1px solid #dedddd;
+    margin: 5px 0px;
+    height: 30px;
+    padding-left: 5px;
 }
