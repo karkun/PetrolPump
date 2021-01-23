@@ -36,7 +36,7 @@
         <div class="sc">
             <div class="reg_cont">
                 <h2>Add Sales</h2>
-                <form class="reg" action="" method="POST"> 
+                <form class="reg" id="reg" action="" method="POST"> 
                     <div class="reg_sec">
                         <div class="reg_input">
                             <label for="emp_list" >Select Employee</label>
@@ -77,17 +77,16 @@
                         </div>
                     </div>
                                    
-                    
-                    <div class="btn">
-                        <button class="reg_rst" value="reset" formaction=""><i class="fas fa-redo"></i>
-                            
-                        </button>
-                        <button class="reg_sub" value="submit" formaction=""><i class="fas fa-chevron-right"></i>
-                               
-                        </button>
-                        
-                    </div>
                 </form>
+                <div class="btn" >
+                    <button class="reg_rst" form="reg" value="reset" formaction=""><i class="fas fa-redo"></i>
+                        
+                    </button>
+                    <button class="reg_sub" form="reg" value="submit" formaction=""><i class="fas fa-chevron-right"></i>
+                           
+                    </button>
+                    
+                </div>
             </div>
         </div>
     </div>
