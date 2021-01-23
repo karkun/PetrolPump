@@ -399,8 +399,10 @@ li {
 
 .dash .sc{
     width: 100%;
-    overflow: auto;
+    /* height: 100%; */
+    overflow: hidden;
     display: flex;
+    flex-direction: column;
     /* box-shadow: 1px 0px 8px 0px #504f4f inset; */
     background-color: rgb(231, 231, 233);
 }
@@ -434,18 +436,20 @@ li {
 
 .reg_cont{
     /* position: relative; */
-    width: 100%;
+    /* width: 100%; */
+    height: 90%;
     margin: 10px;
+    margin-bottom: 0px;
     overflow: auto;
     box-shadow: 0px 1px 5px 0px grey;
     background-color: white;
-    padding: 20px 0px 20px 50px; 
+    padding: 20px 0px 20px 50px;
     
 }
 
 form.reg{
     display: flex;
-    min-height: 410px;
+    /* min-height: 415px; */
     flex-direction: column;
 }
 .reg_sec {
@@ -472,6 +476,7 @@ form.reg{
 
 .reg_input {
     width: 33%;
+    margin-bottom: 10px;
     display: flex;
     flex-direction: column;
 }
@@ -509,23 +514,30 @@ form.reg{
     width: max-content;
 }
 
+.btn {
+    /* width: 100%; */
+    margin: 10px;
+    margin-top: 0;
+    position: relative;
+    box-shadow: 0px 5px 5px 0px grey;
+    background-color: white;
+    min-height: 60px;
+}
+
 .reg_rst, .reg_sub{
     border: none;
     position: absolute;
-    bottom: -125px;
+    /* bottom: 0; */
     width: 60px;
     height: 60px;
     cursor: pointer;
-    
 }
-.btn{
-    position: relative;
-}
+
 
 button.reg_rst {
     background-color: rgba(255, 20, 20, 0.562);
     outline: none;
-    left: -50px;
+    left: 0px;
    
 }
 button.reg_rst:hover {
@@ -536,7 +548,7 @@ button.reg_rst:hover {
 button.reg_sub {
     background-color: rgba(17, 204, 17, 0.603);
     outline: none;
-    right: 0;
+    right: 0px;
 }
 
 button.reg_sub:hover {
@@ -626,5 +638,25 @@ button.reg_sub:hover {
         font-size: .8em;
     }
     
+    .reg_cont{
+        padding-top: 10px;
+        padding-left: 5vw;
+    }
 
+    .reg_sec {
+        flex-direction: column;
+    }
+
+    .reg_input, .reg_add div {
+        width: 100%;
+        flex-direction: column;
+    }
+    .reg_input input[type="text"], .reg_input textarea, .reg_input input[type="date"] {
+        width: 90%;
+    }
+    .reg_add{
+        display: flex;
+        flex-direction: column;
+    }
+    
 }
