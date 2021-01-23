@@ -445,7 +445,7 @@ li {
 
 form.reg{
     display: flex;
-    min-height: 413px;
+    min-height: 410px;
     flex-direction: column;
 }
 .reg_sec {
