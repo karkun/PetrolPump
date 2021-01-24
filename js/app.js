@@ -1,6 +1,8 @@
-const ham = document.querySelector(".ham");
+const ham = document.querySelector(".hc .ham");
+const dashHam = document.querySelector(".head .ham");
 const nav = document.querySelector("nav");
 const i = document.querySelector(".ham i");
+const fc = document.querySelector(".fc")
 
 
 ham.addEventListener('click', () => {
@@ -16,6 +18,17 @@ ham.addEventListener('click', () => {
         nav.classList.toggle('open');
     }
 
+})
+
+dashHam.addEventListener('click',() => {
+    if(fc.classList.contains("close"))
+    {
+        i.classList.remove("close");
+        nav.classList.toggle('close');
+    }
+    else{
+        nav.classList.toggle('close');
+    }
 })
 
 const links = document.querySelectorAll("li a");

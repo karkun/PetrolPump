@@ -53,7 +53,7 @@ h1{
     font-weight: 400;
     font-size: calc(16px + 1.2vw);
 }
-.ham {
+.hc .ham {
     float: right;
     transform: translate(-100%, 5%);
     display: none;
@@ -352,12 +352,18 @@ li {
 
 .dashhead .head{
     display: flex;
-    margin: 0px 30px;
+    /* margin: 0px 30px; */
     width: 100%;
     align-items: center;
     
 }
-
+.head .ham {
+    padding: 0px 10px;
+    cursor: pointer;
+}
+.head i.fas.fa-bars {
+    color: rgb(28, 168, 157);
+}
 .head .hd{
     width: 50%;
     height: inherit;
@@ -373,7 +379,7 @@ li {
 
 .dashhead h1{
     font-size: 1.2em;
-    padding-left: 10px;
+    padding-left: 5px;
     color: white;
 }
 
@@ -387,15 +393,28 @@ li {
 }
 
 .dash .fc{
-    min-width: fit-content;
-    width: 15vw;
+    min-width: max-content;
+    width: 200px;
     display: flex;
     flex-direction: column;
     overflow: auto;
     background-color: rgba(6, 53, 73, 1);
-    
+    transition: all 0.5s ease 0.2s;
+
 }
 
+.dash .fc.hide{
+    min-width: 0vw;
+    width: 50px;
+    transition: all 0.5s ease 0.2s;
+}
+.menuhead.hide, .menu.hide{
+    opacity: 0;
+    transform: translateX(-100%);
+    display: block;
+    overflow: hidden;
+    transition: all 0.2s ease;
+}
 
 .dash .sc{
     width: 100%;
@@ -408,10 +427,12 @@ li {
 }
 
 
+
 .menuhead, .menu{
     font-family: 'Cairo', sans-serif;
     
     padding: 3px 10px;
+    transition: all 0.2s ease;
 }
 
 .menuhead{
@@ -433,6 +454,8 @@ li {
 .menu:hover{
     background-color: #084a58cc;
 }
+
+
 
 .reg_cont{
     /* position: relative; */
@@ -580,6 +603,8 @@ button.reg_sub:hover {
     padding-left: 5px;
 }
 
+
+
 @media only screen and (max-width: 768px) {
 
     
@@ -589,7 +614,7 @@ button.reg_sub:hover {
     h1{
         font-size: 1.5em;
     } */
-    .ham{
+    .hc .ham{
         display: block;
     }
     nav {
