@@ -554,18 +554,20 @@ form.reg{
 
 .reg_input label {
     font-size: 14px;
+    padding-bottom: 5px;
     font-family: 'Fira Sans Condensed';
 }
 
 .reg_input input[type="text"], .reg_input select {
     
-    font-size: 14px;
+    font-size: 1em;
     font-family: 'Cairo';
     height: 25px;
     padding-left: 5px;
     border: none;
     outline: none;
     border-bottom: 1px solid #dedddd;
+    transition: border-bottom 0.3s ease;
     
 }
 
@@ -574,7 +576,11 @@ form.reg{
     width: 80%;
     
 }
-
+.reg_input input[type="text"]:focus {
+    
+    border-color: rgb(141, 141, 141);
+    
+}
 .reg_input select{
     width: max-content;
 }
