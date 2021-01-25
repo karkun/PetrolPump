@@ -191,7 +191,8 @@ li {
     padding: 30px;
 }
 .login h2{
-    font-size: 1.8em;
+    font-family: 'Fira Sans Condensed';
+    font-size: 2em;
     font-weight: 900;
     margin-top: 20px;
     margin-bottom: 30px;
@@ -215,7 +216,7 @@ li {
 }
 .name-input input:focus{
     border-radius: 5px;
-    background-color: rgb(243, 243, 243);
+    /* background-color: rgb(243, 243, 243); */
 }
 
 .name-input label{
@@ -276,7 +277,7 @@ li {
 }
 .pwd-input input:focus{
     border-radius: 5px;
-    background-color: rgb(243, 243, 243);
+    /* background-color: rgb(243, 243, 243); */
 }
 .pwd-input label{
     position: absolute;
@@ -730,6 +731,23 @@ button.reg_sub:hover {
     .reg_add{
         display: flex;
         flex-direction: column;
+    }
+    .head .ham{
+        padding-right: 5px;
+    }
+    .head i.fas.fa-bars {
+        font-size: 1.2em;
+    }
+    .us .fa-user-circle{
+        font-size: 1.4em;
+    }
+    .us .status{
+        width: 8px;
+        height: 8px;
+        left: 15px;
+    }
+    .us .user{
+        font-size: 1.1em;
     }
     
 }
